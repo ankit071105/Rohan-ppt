@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #240641;
+    --bg-color: rgb(52, 2, 2);
     --text-color: #82f4f0;
     --main-color: #7e097b;
     --white-color: #7cd1f9;
@@ -978,5 +978,30 @@ canvas {
     }
     .earth-container {
         animation-play-state: paused; /* Pause Earth animation on small screens */
+    }
+}
+
+#splash-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.splash {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: splash-animation 3s ease-in-out forwards;
+}
+
+@keyframes splash-animation {
+    to {
+        transform: scale(2);
+        opacity: 0;
     }
 }

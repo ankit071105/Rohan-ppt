@@ -13,7 +13,29 @@
 </head>
 
 <body>
+    <div id="splash-container"></div>
+    <script>
+
+document.addEventListener('click', function (e) {
+    const splashContainer = document.getElementById('splash-container');
+    const splash = document.createElement('div');
+    splash.className = 'splash';
+    splash.style.left = `${e.clientX - 25}px`;
+    splash.style.top = `${e.clientY - 25}px`;
+    splash.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    splash.style.width = '50px';
+    splash.style.height = '50px';
+
+    splashContainer.appendChild(splash);
+
+    splash.addEventListener('animationend', function () {
+        splash.remove();
+    });
+});
+
+    </script>
     <header class="header">
+
         <a href="#" class="logo"><img src="images/100.jpeg" alt="" style="width:130px; height: 100px; border-radius: 100%;"></a>
 
         <nav class="navbar">
@@ -41,10 +63,10 @@
             <p>Currently I'm a student of ITER College, where I am pursuing my B-tech Degree</p>
 
             <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100055383093406"><i class='bx bxl-facebook'></i></a>
-                <a href="https://twitter.com/AnkitKumar63433"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/tech_ankit07?igsh=MXgxdmRzbWt3NDJybg=="><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com/in/ankit-kumar-01a52827b/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100020150710605"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/han_singh45857?t=No6TFE4Cg6bb_sc4kSLnLg&s=08"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/_.singh_rohan._?igsh=MWhrNmYwcG9vN3Nwbg=="><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/rohan-singh-b58a6230b/"><i class='bx bxl-linkedin'></i></a>
             </div>
 
             <a href="#" class="btn">Download My Resume</a>
@@ -75,13 +97,13 @@ earths.addEventListener('click', () => {
                 <p>
                     Currently <B>I'm</B> pursuing his studies in <B>
                         Computer Science and Engineering at ITER SOA University
-                    </B>, Ankit specializes in front-end development, boasting a robust skill set encompassing <B>
+                    </B>, Rohan specializes in front-end development, boasting a robust skill set encompassing <B>
                         HTML, CSS, JavaScript, and React
                     </B>. With a keen eye for user interface design and a knack for creating engaging digital experiences, he has already made significant strides in the field of <B>
                         web development
-                    </B>. Eager to expand his horizons, Ankit has ventured into the realms of <B>iOS development and Flutter</B>, delving into the world of <B>
+                    </B>. Eager to expand his horizons, Rohan has ventured into the realms of <B>iOS development and Flutter</B>, delving into the world of <B>
                         mobile app developmen
-                    </B>t with enthusiasm and determination. His journey as a budding developer reflects his commitment to continuous learning and growth, as he seeks to leverage his expertise and explore new technologies to craft innovative solutions that push the boundaries of what's possible in the digital landscape. With a solid foundation in both front-end web development and burgeoning skills in mobile app development, Ankit Kumar is poised to make a significant impact in the ever-evolving realm of technology.
+                    </B>t with enthusiasm and determination. His journey as a budding developer reflects his commitment to continuous learning and growth, as he seeks to leverage his expertise and explore new technologies to craft innovative solutions that push the boundaries of what's possible in the digital landscape. With a solid foundation in both front-end web development and burgeoning skills in mobile app development, Rohan Singh is poised to make a significant impact in the ever-evolving realm of technology.
                 </p>
             <a href="#" class="btn">Read More</a>
         </div>
@@ -330,10 +352,10 @@ SilentSpeak is a groundbreaking project aimed at transforming communication for 
         </div>
 
         <div class="social-media"  style="display: flex !important; justify-content: space-between !important;">
-            <a href="#" style="color: aliceblue; background: rgb(26, 43, 191); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-facebook'></i></a>
-            <a href="#"  style="color: rgb(241, 241, 241); background:rgb(51, 107, 197); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-twitter'></i></a>
-            <a href="#"  style="color: aliceblue; background: rgb(231, 138, 16); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"  style="color: aliceblue; background: rgb(29, 83, 190); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100020150710605" style="color: aliceblue; background: rgb(26, 43, 191); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-facebook'></i></a>
+            <a href="https://x.com/han_singh45857?t=No6TFE4Cg6bb_sc4kSLnLg&s=08"  style="color: rgb(241, 241, 241); background:rgb(51, 107, 197); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/_.singh_rohan._?igsh=MWhrNmYwcG9vN3Nwbg=="  style="color: aliceblue; background: rgb(231, 138, 16); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/in/rohan-singh-b58a6230b/"  style="color: aliceblue; background: rgb(29, 83, 190); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-linkedin'></i></a>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
